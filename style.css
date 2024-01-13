@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+#title{
+    color:white;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader{
+    width:200px;
+    height:200px;
+    border:20px solid #63A088;
+    border-top:20px solid #DCDE54;
+    border-radius: 50%;
+    animation-name:Animate;
+    animation-duration:1s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes Animate {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+    
+}
